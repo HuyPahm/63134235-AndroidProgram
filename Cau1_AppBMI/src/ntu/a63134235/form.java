@@ -134,6 +134,7 @@ public class form extends JFrame {
 		he.setText("");
 		we.setText("");
 		ans.setText("");
+		textField.setText("");
 		
 	}
 }
