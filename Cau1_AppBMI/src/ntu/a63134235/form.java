@@ -18,6 +18,7 @@ public class form extends JFrame {
 	private JTextField he;
 	private JTextField we;
 	private JTextField ans;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -52,7 +53,7 @@ public class form extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Cân Nặng");
-		lblNewLabel_1.setBounds(10, 60, 48, 14);
+		lblNewLabel_1.setBounds(10, 60, 86, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("BMI");
@@ -60,12 +61,12 @@ public class form extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		he = new JTextField();
-		he.setBounds(74, 8, 168, 20);
+		he.setBounds(119, 8, 168, 20);
 		contentPane.add(he);
 		he.setColumns(10);
 		
 		we = new JTextField();
-		we.setBounds(74, 57, 168, 20);
+		we.setBounds(119, 57, 168, 20);
 		contentPane.add(we);
 		we.setColumns(10);
 		
@@ -101,6 +102,13 @@ public class form extends JFrame {
 		});
 		btnExit.setBounds(304, 175, 89, 23);
 		contentPane.add(btnExit);
+		
+		textField = new JTextField();
+		textField.setEditable(false);
+		textField.setEnabled(false);
+		textField.setBounds(191, 112, 146, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
 	}
 	void xulycal() {
 		String str_he = he.getText();
@@ -110,7 +118,6 @@ public class form extends JFrame {
 		Double bmi = we / (he*he);
 		ans.setText(String.valueOf(bmi));
 		 
-		
 		
 	}
 	void xulycle() {
