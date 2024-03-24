@@ -131,6 +131,9 @@ public class form extends JFrame {
 		    }
 	}
 	void xulycle() {
+		he.setText("");
+		we.setText("");
+		ans.setText("");
 		
 	}
 }
