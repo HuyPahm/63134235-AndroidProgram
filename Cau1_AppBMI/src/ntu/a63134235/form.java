@@ -8,14 +8,16 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class form extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField he;
+	private JTextField we;
+	private JTextField ans;
 
 	/**
 	 * Launch the application.
@@ -57,30 +59,46 @@ public class form extends JFrame {
 		lblNewLabel_2.setBounds(10, 115, 48, 14);
 		contentPane.add(lblNewLabel_2);
 		
-		textField = new JTextField();
-		textField.setBounds(146, 8, 96, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		he = new JTextField();
+		he.setBounds(74, 8, 168, 20);
+		contentPane.add(he);
+		he.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(146, 57, 96, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		we = new JTextField();
+		we.setBounds(74, 57, 168, 20);
+		contentPane.add(we);
+		we.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(146, 112, 96, 20);
-		contentPane.add(textField_2);
-		textField_2.setColumns(10);
+		ans = new JTextField();
+		ans.setEditable(false);
+		ans.setEnabled(false);
+		ans.setBounds(74, 112, 96, 20);
+		contentPane.add(ans);
+		ans.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Calculator");
-		btnNewButton.setBounds(56, 175, 89, 23);
-		contentPane.add(btnNewButton);
+		JButton cal = new JButton("Calculator");
+		cal.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		cal.setBounds(56, 175, 89, 23);
+		contentPane.add(cal);
 		
 		JButton btnClear = new JButton("Clear");
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnClear.setBounds(174, 175, 89, 23);
 		contentPane.add(btnClear);
 		
 		JButton btnExit = new JButton("Exit");
+		btnExit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);			}
+		});
 		btnExit.setBounds(304, 175, 89, 23);
 		contentPane.add(btnExit);
 	}
