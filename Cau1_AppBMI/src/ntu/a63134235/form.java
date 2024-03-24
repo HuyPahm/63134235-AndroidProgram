@@ -48,11 +48,11 @@ public class form extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Chiều Cao");
+		JLabel lblNewLabel = new JLabel("Chiều Cao (m)");
 		lblNewLabel.setBounds(10, 11, 86, 14);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("Cân Nặng");
+		JLabel lblNewLabel_1 = new JLabel("Cân Nặng (kg)");
 		lblNewLabel_1.setBounds(10, 60, 86, 14);
 		contentPane.add(lblNewLabel_1);
 		
