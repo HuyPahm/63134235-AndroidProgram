@@ -79,7 +79,7 @@ public class form extends JFrame {
 		JButton cal = new JButton("Calculator");
 		cal.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				xulycal();
 			}
 		});
 		cal.setBounds(56, 175, 89, 23);
@@ -88,7 +88,7 @@ public class form extends JFrame {
 		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				xulycle();
 			}
 		});
 		btnClear.setBounds(174, 175, 89, 23);
@@ -101,5 +101,11 @@ public class form extends JFrame {
 		});
 		btnExit.setBounds(304, 175, 89, 23);
 		contentPane.add(btnExit);
+	}
+	void xulycal() {
+		
+	}
+	void xulycle() {
+		
 	}
 }
