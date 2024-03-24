@@ -83,7 +83,7 @@ public class form extends JFrame {
 				xulycal();
 			}
 		});
-		cal.setBounds(56, 175, 89, 23);
+		cal.setBounds(35, 175, 110, 23);
 		contentPane.add(cal);
 		
 		JButton btnClear = new JButton("Clear");
@@ -92,7 +92,7 @@ public class form extends JFrame {
 				xulycle();
 			}
 		});
-		btnClear.setBounds(174, 175, 89, 23);
+		btnClear.setBounds(174, 175, 113, 23);
 		contentPane.add(btnClear);
 		
 		JButton btnExit = new JButton("Exit");
@@ -100,7 +100,7 @@ public class form extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);			}
 		});
-		btnExit.setBounds(304, 175, 89, 23);
+		btnExit.setBounds(304, 175, 110, 23);
 		contentPane.add(btnExit);
 		
 		textField = new JTextField();
