@@ -118,7 +118,17 @@ public class form extends JFrame {
 		Double bmi = we / (he*he);
 		ans.setText(String.valueOf(bmi));
 		 
-		
+		if (bmi < 18) {
+			 textField.setText("Bạn là người gầy");
+		    } else if (bmi <= 24.9) {
+		    	textField.setText("Bạn là người bình thường");
+		    } else if (bmi <= 29.9) {
+		    	textField.setText("Bạn bị béo phì độ I");
+		    } else if (bmi <= 34.9) {
+		    	textField.setText( "Bạn bị béo phì độ II");
+		    } else {
+		    	textField.setText("Bạn bị béo phì độ III");
+		    }
 	}
 	void xulycle() {
 		
