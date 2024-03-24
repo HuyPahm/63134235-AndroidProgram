@@ -103,6 +103,14 @@ public class form extends JFrame {
 		contentPane.add(btnExit);
 	}
 	void xulycal() {
+		String str_he = he.getText();
+		String str_we = we.getText();
+		Double he = Double.parseDouble(str_he);
+		Double we = Double.parseDouble(str_we);
+		Double bmi = we / (he*he);
+		ans.setText(String.valueOf(bmi));
+		 
+		
 		
 	}
 	void xulycle() {
