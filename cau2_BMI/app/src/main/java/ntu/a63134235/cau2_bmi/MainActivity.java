@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         calculateButton = findViewById(R.id.calculateButton);
         resultText = findViewById(R.id.resultText);
 
-
+        calculateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calculateBMI();
+            }
+        });
     }
 }
