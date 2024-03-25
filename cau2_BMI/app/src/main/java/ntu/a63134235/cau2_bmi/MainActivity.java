@@ -48,5 +48,15 @@ public class MainActivity extends AppCompatActivity {
         float weight = Float.parseFloat(weightStr);
         float bmi = weight/(height*height);
         String result;
+        if(bmi < 18.5){
+            result = "Bạn bị thiếu cân. BMI của bạn là "+bmi;
+        } else if (bmi >= 18.5 && bmi < 25) {
+            result = "Bạn bình thường. BMI của bạn là "+bmi;
+        }else if (bmi >= 25 && bmi < 30) {
+            result = "Bạn bị thừa cân. BMI của bạn là " + bmi;
+        }else {
+            result = "Bạn béo phì. BMI của bạn là "+bmi;
+        }
+        resultText.setText(result);
     }
 }
