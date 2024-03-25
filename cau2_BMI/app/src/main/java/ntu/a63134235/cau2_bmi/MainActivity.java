@@ -37,4 +37,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void calculateBMI(){
+        String heightStr = heightInput.getText().toString();
+        String weightStr = weightInput.getText().toString();
+
+    }
 }
