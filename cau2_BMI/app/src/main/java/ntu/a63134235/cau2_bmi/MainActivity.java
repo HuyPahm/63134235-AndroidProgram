@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
             resultText.setText("Hãy nhập chiều cao và cân nặng.");
             return;
         }
-
+        float height = Float.parseFloat(heightStr)/100; // doi ve don vi met
+        float weight = Float.parseFloat(weightStr);
+        float bmi = weight/(height*height);
+        String result;
     }
 }
