@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     public void calculateBMI(){
         String heightStr = heightInput.getText().toString();
         String weightStr = weightInput.getText().toString();
+        if(heightStr.isEmpty() || weightStr.isEmpty()){
+            resultText.setText("Hãy nhập chiều cao và cân nặng.");
+            return;
+        }
 
     }
 }
