@@ -11,5 +11,17 @@
             android:icon="@drawable/ic_launcher_foreground"
             android:title="home"/>
 
+        <item android:id="@+id/home"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="contact"/>
+
+        <item android:id="@+id/home"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="profile"/>
+
+        <item android:id="@+id/home"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="photo"/>
+
     </group>
 </menu>
